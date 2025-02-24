@@ -19,8 +19,7 @@ function getAllPictures() {
         button.style.zIndex = "200";
         button.style.width = "100%"
         button.style.position ="relative";
-        button.style.marginBottom = "5";
-        button.style.marginTop = "5";
+        button.style.marginBottom = "5px";
         button.value = element;
         button.className = "seePostButtons";
         if(element.includes("/p/")|| element.includes("/reel/"))
