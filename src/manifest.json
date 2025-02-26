@@ -15,13 +15,19 @@
     "http://*/*",   
     "https://*/*"
   ],
+  
     "background": {
        "service_worker": "./dist/background.js"
     },
+  "content_scripts": [
+  {
+    "matches": ["https://www.instagram.com/*"],
+    "js": ["./dist/content.js"]
+  }
+],
     "icons": {
       "16": "instergram.png",
       "48": "instergram.png",
       "128": "instergram.png"
     }
-    
  }
