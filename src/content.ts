@@ -6,6 +6,22 @@ chrome.runtime.onMessage.addListener( (request, sender, message) => {
     }
 });
 
+function RemovePopUpsAutomatically() {
+    const observer = new MutationObserver(() => {
+        const popUps = document.getElementsByClassName("x1n2onr6 xzkaem6");
+        for (const popUp of popUps) {
+            popUp.remove();
+        }
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+}
+// calling to active the observer
+RemovePopUpsAutomatically();
+
 
 function removeDuplicates()
 {
