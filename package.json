@@ -1,11 +1,13 @@
 {
   "name": "instergramano",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config src/webpack/webpack.config.js"
+    "build:chrome" : "webpack --env browser=chrome --config src/webpack/webpack.config.js",
+    "build:firefox" : "webpack --env browser=firefox --config src/webpack/webpack.config.js", 
+    "build": "npm run build:firefox && npm run build:chrome"
   },
   "keywords": [],
   "author": "",

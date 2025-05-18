@@ -1,0 +1,27 @@
+{
+  "name": "Instergram anonymously",
+  "description": "This extension is designed to keep your Instagram activity completely anonymous...",
+  "version": "1.1",
+  "manifest_version": 2,
+  "browser_action": {},
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "webRequest",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["./dist/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["./dist/content.js"]
+    }
+  ],
+  "icons": {
+    "16": "instergram.png",
+    "48": "instergram.png",
+    "128": "instergram.png"
+  }
+}
