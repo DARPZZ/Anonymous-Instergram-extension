@@ -1,12 +1,4 @@
-Manual Installation (Developer Mode)
-If you prefer to install the extension manually or are testing a development version, follow these steps:
-
-Download or Clone the Repository:
-
-Download the ZIP file from the repository :
-Extract the Files:
-If you downloaded a ZIP file, extract it to a convenient location.
-
+# Browser compatibility
 | **Browser**     | **Manifest V2**       | **Manifest V3**     | **Notes**                                |
 |------------------|------------------------|-----------------------|--------------------------------------------|
 | **Chrome**       | ❌ (deprecated)         | ✅ Full support       | MV2 nearly removed                         |
@@ -17,6 +9,15 @@ If you downloaded a ZIP file, extract it to a convenient location.
 | **Vivaldi**      | ✅ Supported            | ✅                    | Similar to Brave                           |
 | **Safari**       | ❌ (Not MV2)            | ⚠️ Partial MV3        | Apple’s own system                         |
 | **Pale Moon etc.** | ✅ (legacy systems)   | ❌                    | Old-style extensions                       |
+
+Manual Installation (Developer Mode)
+If you prefer to install the extension manually or are testing a development version, follow these steps:
+
+Download or Clone the Repository:
+
+Download the ZIP file from the repository :
+Extract the Files:
+If you downloaded a ZIP file, extract it to a convenient location.
 
 ## For chrome
 Open Chrome Extensions Page:
