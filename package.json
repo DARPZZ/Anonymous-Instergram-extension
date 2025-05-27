@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config src/webpack/webpack.config.js"
+  "build:v2": "cross-env MANIFEST_VERSION=2 webpack --config src/webpack/webpack.config.js",
+  "build:v3": "cross-env MANIFEST_VERSION=3 webpack --config src/webpack/webpack.config.js",
+  "build:all": "npm run build:v2 && npm run build:v3"
   },
   "keywords": [],
   "author": "",

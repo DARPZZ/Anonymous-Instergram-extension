@@ -1,0 +1,1 @@
+(chrome.action||chrome.browserAction).onClicked.addListener((()=>{chrome.tabs.query({active:!0,currentWindow:!0},(e=>{const c=e[0];chrome.tabs.sendMessage(c.id,{action:"run"})}))}));

@@ -1,1 +1,0 @@
-chrome.action.onClicked.addListener((()=>{chrome.tabs.query({active:!0,currentWindow:!0},(function(e){var n=e[0];chrome.tabs.sendMessage(n.id,{action:"run"})}))}));
