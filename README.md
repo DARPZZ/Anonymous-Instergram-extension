@@ -1,14 +1,15 @@
 # Browser compatibility
-| **Browser**     | **Manifest V2**       | **Manifest V3**     | **Notes**                                |
-|------------------|------------------------|-----------------------|--------------------------------------------|
-| **Chrome**       | ❌ (deprecated)         | ✅ Full support       | MV2 nearly removed                         |
-| **Edge**         | ⚠️ (phasing out)        | ✅                    | Follows Chrome                             |
-| **Firefox**      | ✅ Supported            | ✅ Supported          | Maintains more powerful APIs in MV3        |
-| **Opera**        | ⚠️ Supported            | ✅                    | Tracks Chromium updates                    |
-| **Brave**        | ✅ Supported            | ✅                    | May keep MV2 longer                        |
-| **Vivaldi**      | ✅ Supported            | ✅                    | Similar to Brave                           |
-| **Safari**       | ❌ (Not MV2)            | ⚠️ Partial MV3        | Apple’s own system                         |
-| **Pale Moon etc.** | ✅ (legacy systems)   | ❌                    | Old-style extensions                       |
+| **Browser**        | **Manifest V2**         | **Manifest V3**         | **Notes**                                  | **Recommended to Use**        |
+|--------------------|--------------------------|---------------------------|----------------------------------------------|-------------------------------|
+| **Chrome**         | ❌ (deprecated)           | ✅ Full support            | MV2 nearly removed                           | ✅ **Manifest V3**             |
+| **Edge**           | ⚠️ (phasing out)          | ✅                         | Follows Chrome                               | ✅ **Manifest V3**             |
+| **Firefox**        | ✅ Supported              | ✅ Supported              | Maintains more powerful APIs in MV2          | ✅ **Manifest V2 (preferred)** |
+| **Opera**          | ⚠️ Supported              | ✅                         | Tracks Chromium updates                      | ✅ **Manifest V3**             |
+| **Brave**          | ✅ Supported              | ✅                         | May keep MV2 longer                          | ✅ **Manifest V2 or V3**       |
+| **Vivaldi**        | ✅ Supported              | ✅                         | Similar to Brave                             | ✅ **Manifest V2 or V3**       |
+| **Safari**         | ❌ (Not MV2)              | ⚠️ Partial MV3            | Apple’s own system                           | ⚠️ **Partial MV3**             |
+| **Pale Moon etc.** | ✅ (legacy systems)       | ❌                         | Old-style extensions                         | ⚠️ **Manifest V2 only**        |
+
 
 Manual Installation (Developer Mode)
 If you prefer to install the extension manually or are testing a development version, follow these steps:
