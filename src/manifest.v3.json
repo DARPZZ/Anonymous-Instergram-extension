@@ -1,7 +1,7 @@
 {
     "name": "Instergram anonymously",
     "description": "This extension is designed to keep your Instagram activity completely anonymous. It hides your presence while you browse, view stories, and interact on the platform without revealing your identity. Stay invisible while enjoying Instagram with full privacy.",
-    "version": "1.1",
+    "version": "1.1.1",
     "manifest_version": 3,
     "action": {},
     "permissions": [
