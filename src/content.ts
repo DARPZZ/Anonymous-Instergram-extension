@@ -1,4 +1,4 @@
-const instergramBaseUrl = "https://www.instagram.com"
+const instergramBaseUrl = "https://www.instagram.com/"
 
 chrome.runtime.onMessage.addListener( (request, sender, message) => {
     if (request.action === "run") {
@@ -30,7 +30,6 @@ function removeDuplicates()
         Array.from(buttonex).forEach((btn) => {
             btn.parentElement?.removeChild(btn);
         });
-        console.log("Removeing Pop up")
     }
 }
 function getAllPictures() {
@@ -47,15 +46,18 @@ function getAllPictures() {
         button.style.marginBottom = "5px";
         button.value = element;
         button.className = "seePostButtons";
-        if(element.includes("/p/")|| element.includes("/reel/"))
+        if(element !== null)
         {
-            button.addEventListener('click', function() {
-                window.open(`${instergramBaseUrl}${element}`, '_blank');
-            });
-            elements[index].parentElement.appendChild(button);
+            if(element.includes("/p/")|| element.includes("/reel/"))
+            {
+                button.addEventListener('click', function() {
+                    window.open(`${instergramBaseUrl}${element}`, '_blank');
+                });
+                elements[index].parentElement.appendChild(button);
+            }
         }
+       
     }
-    console.log("Added buttons");
 }
 function runScript(): void {
     getAllPictures()
