@@ -5,15 +5,17 @@ chrome.runtime.onMessage.addListener( (request, sender, message) => {
        runScript();
     }
 });
-
+function RemoveLoginPopups()
+{
+    const popUps = document.getElementsByClassName("x1n2onr6 xzkaem6");
+    for (const popUp of popUps) {
+        popUp.remove();
+    }
+}
 function RemovePopUpsAutomatically() {
     const observer = new MutationObserver(() => {
-        const popUps = document.getElementsByClassName("x1n2onr6 xzkaem6");
-        for (const popUp of popUps) {
-            popUp.remove();
-        }
+       RemoveLoginPopups();
     });
-
     observer.observe(document.body, {
         childList: true,
         subtree: true
