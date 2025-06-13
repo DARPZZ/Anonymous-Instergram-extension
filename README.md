@@ -33,9 +33,6 @@ Verify Installation:
 Once loaded, the extension should appear in your list of extensions. You can now pin it to the toolbar for easy access.
 
 ## For Firefox
-In Firefox, navigate to:  about:debugging#/runtime/this-firefox
-![alt text](image.png)
-Navigate to:
-instergramAno\src\dist-v2
+In Firefox, navigate to: **https://addons.mozilla.org/firefox/downloads/file/4510941/abbd7922f46d48a6ad7e-1.1.3.xpi** 
 
 Click on the manifest.json file and the extension should be loaded
